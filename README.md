@@ -57,3 +57,11 @@ You also need to have Node.js installed.
 ## 🤝 Contributing
 
 Feel free to fork this project, submit pull requests, or open issues if you want to help expand J.A.R.V.I.S.'s capabilities!
+
+---
+
+## 🚀 Advanced Deployment
+
+Because J.A.R.V.I.S. integrates deeply with macOS, it cannot be deployed to standard web servers (like Vercel or Heroku). However, you can package it as a native standalone macOS `.app` using Electron, or run it silently as a Background Service. 
+
+For full step-by-step instructions on advanced local deployment, check out the [Deployment Guide](./DEPLOYMENT_GUIDE.md).
