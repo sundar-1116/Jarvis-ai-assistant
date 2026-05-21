@@ -1,3 +1,6 @@
+<img width="1440" height="900" alt="SCR-20260521-pban" src="https://github.com/user-attachments/assets/3efd2283-b036-4c4c-83e5-adef4a460d9b" />
+
+
 # J.A.R.V.I.S. - AI Desktop Assistant
 
 J.A.R.V.I.S. is an advanced, fully voice-activated AI desktop assistant built specifically for macOS. It acts as a bridge between a powerful Neural Network (Llama 3.3) and your local operating system, allowing you to control your desktop, websites, and applications entirely hands-free.
@@ -59,6 +62,11 @@ You also need to have Node.js installed.
 Feel free to fork this project, submit pull requests, or open issues if you want to help expand J.A.R.V.I.S.'s capabilities!
 
 ---
+
+<img width="1440" height="900" alt="SCR-20260521-pcfx" src="https://github.com/user-attachments/assets/002b3f5f-f3c9-461e-9ff5-065a3afad238" />
+
+
+
 
 # J.A.R.V.I.S. Deployment Guide
 
