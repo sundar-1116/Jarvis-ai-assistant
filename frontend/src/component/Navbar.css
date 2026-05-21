@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+.futuristic-navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1400px;
+  height: 60px; /* Slimmer profile matching image */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  
+  /* Deep translucent glass */
+  background: rgba(10, 18, 25, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  /* Borders */
+  border-left: 2px solid #00e5ff;
+  border-right: 2px solid #00e5ff;
+  border-top: 1px solid rgba(0, 229, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 229, 255, 0.1);
+  box-shadow: inset 0 0 15px rgba(0, 229, 255, 0.05);
+  
+  /* Iron Man HUD chamfered corners matching the image perfectly */
+  -webkit-clip-path: polygon(
+    20px 0, 
+    100% 0, 
+    100% calc(100% - 20px), 
+    calc(100% - 20px) 100%, 
+    0 100%, 
+    0 20px
+  );
+  clip-path: polygon(
+    20px 0, 
+    100% 0, 
+    100% calc(100% - 20px), 
+    calc(100% - 20px) 100%, 
+    0 100%, 
+    0 20px
+  );
+  
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* J.A.R.V.I.S Logo Container */
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.6s ease;
+}
+
+.navbar-logo-container:hover .navbar-logo-img {
+  transform: rotate(360deg) scale(1.1);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.8);
+}
+
+.navbar-logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #00e5ff; /* Crisp cyan matching image */
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/* Hover Effects */
+.nav-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Minimalist hover underline */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 1px;
+  background-color: #00e5ff;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.8);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .futuristic-navbar {
+    padding: 0 25px;
+    width: 95%;
+    height: 50px;
+  }
+}

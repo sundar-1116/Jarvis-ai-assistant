@@ -1,0 +1,93 @@
+.widgets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.widget-panel {
+  background: rgba(10, 20, 30, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  border-left: 3px solid #00e5ff;
+  padding: 12px;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.widget-panel:hover {
+  background: rgba(10, 20, 30, 0.8);
+  border-color: #00e5ff;
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+.widget-title {
+  font-size: 0.8rem;
+  color: #00e5ff;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+  padding-bottom: 5px;
+}
+
+.clock-time {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  letter-spacing: 2px;
+}
+
+.clock-date {
+  font-size: 0.85rem;
+  color: #a0aab0;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+.weather-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-temp {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.weather-desc {
+  font-size: 0.85rem;
+  color: #a0aab0;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.location-data {
+  font-size: 0.8rem;
+  color: #00e5ff;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+.map-container {
+  width: 100%;
+  height: 130px;
+  margin-top: 8px;
+  border: 1px solid rgba(0, 229, 255, 0.15);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* Sci-fi dark mode map filter! */
+  filter: invert(90%) hue-rotate(180deg) contrast(1.2);
+}
